@@ -3,13 +3,13 @@
 Todos:
 
 * [ ] server
-    * [ ] init from api starter
-    * [ ] add googleapis
+    * [x] init from api starter
+    * [x] add googleapis
     * [ ] oauth api gen url/recv code
     * [ ] email send test
 * [ ] client
-    * [ ] init vuejs
-    * [ ] add the usual stuff
+    * [x] init vuejs
+    * [x] add the usual stuff
     * [ ] redirect for oauth
     * [ ] receive oauth code
     * [ ] home dash
