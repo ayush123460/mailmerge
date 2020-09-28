@@ -6,7 +6,7 @@ const cors = require('cors')
 require('dotenv').config()
 
 const middlewares = require('./middlewares')
-const api = require('./api')
+const api = require('./apiv1')
 
 const app = express()
 
@@ -14,12 +14,6 @@ app.use(morgan('dev'))
 app.use(helmet())
 app.use(express.json())
 app.use(cors())
-
-app.get('/', (req, res) => {
-    res.json({
-        message: 'Hello!'
-    })
-})
 
 app.use('/api/v1', api)
 app.use(middlewares.notFound)
